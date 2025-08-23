@@ -1,0 +1,81 @@
+.footer {
+    background-color: #0d0d0d;
+    color: var(--text-light);
+    padding: 3rem 2rem;
+  }
+  
+  .footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .contactSection, .socialSection {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  
+  .contactTitle {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .contactSection p, .contactSection a {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin: 0.3rem 0;
+    transition: color 0.3s ease;
+  }
+  
+  .contactSection a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+    justify-content: center;
+      align-items: center;
+      gap: 50px;
+  }
+  
+  .socialIcons a {
+    font-size: 1.8rem;
+    color: var(--text-light);
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+  
+  }
+  
+  .socialIcons a:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+  }
+  
+  .bottomBar {
+    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footerContent {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .socialIcons {
+      justify-content: center;
+    }
+  }
+  

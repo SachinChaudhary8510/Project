@@ -1,0 +1,56 @@
+/* src/components/Experience.module.css */
+.experienceGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .experienceCard {
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experienceCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+  }
+  
+  .organizationName {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .role {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+  }
+  
+  .duration {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+  }
+  
+  .responsibilitiesList {
+    list-style: disc;
+    margin-left: 1.5rem;
+    color: var(--text-light);
+  }
+  
+  .responsibilitiesList li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .experienceGrid {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+  }
+  

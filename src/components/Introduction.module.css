@@ -1,0 +1,96 @@
+/* src/components/Introduction.module.css */
+.introSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Adjust based on navbar height */
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .introContent {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    min-width: 250px; /* Minimum width for image container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .personImage {
+    width: 100%;
+    max-width: 350px; /* Max width for the image */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transform: scale(1); /* Initial scale */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for scaling */
+  }
+  
+  /* Hover effect for the image */
+  .personImage:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+  
+  .summaryContainer {
+    flex: 2;
+    min-width: 300px; /* Minimum width for summary container */
+    text-align: left;
+  }
+  
+  .name {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+  }
+  
+  .summary {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text-light);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .introContent {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .imageContainer {
+      margin-bottom: 2rem;
+    }
+  
+    .summaryContainer {
+      text-align: center;
+    }
+  
+    .name {
+      font-size: 2.5rem;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .summary {
+      font-size: 1rem;
+    }
+  }
+  
