@@ -24,7 +24,7 @@
   }
   
   /* Background gradient overlay */
-  .educationCard::after {
+  /* .educationCard::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -38,7 +38,7 @@
     );
     border-top-left-radius: 40% 25%;
     z-index: 1;
-  }
+  } */
   
   /* Content wrapper */
   .educationContent {
