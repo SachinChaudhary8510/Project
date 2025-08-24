@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// Removed Link from react-router-dom as we are using hash links
 import styles from './Navbar.module.css'; // Using CSS Modules
 
 const Navbar = () => {
@@ -13,43 +13,50 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
-        <Link to="/" className={styles.brand}>
+        {/* Changed Link to a tag for home */}
+        <a href="#introduction" className={styles.brand} onClick={() => setIsOpen(false)}>
           My Portfolio
-        </Link>
+        </a>
         <button className={styles.toggler} onClick={toggleMenu}>
           ☰
         </button>
         <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
           <ul className={styles.navList}>
             <li className={styles.navItem}>
-              <Link to="/" className={styles.navLink} onClick={() => setIsOpen(false)}>
+              {/* Changed Link to a tag with hash href */}
+              <a href="#introduction" className={styles.navLink} onClick={() => setIsOpen(false)}>
                 Home
-              </Link>
+              </a>
             </li>
             <li className={styles.navItem}>
-              <Link to="/skills" className={styles.navLink} onClick={() => setIsOpen(false)}>
+              {/* Changed Link to a tag with hash href */}
+              <a href="#skills" className={styles.navLink} onClick={() => setIsOpen(false)}>
                 Skills
-              </Link>
+              </a>
             </li>
             <li className={styles.navItem}>
-              <Link to="/education" className={styles.navLink} onClick={() => setIsOpen(false)}>
+              {/* Changed Link to a tag with hash href */}
+              <a href="#education" className={styles.navLink} onClick={() => setIsOpen(false)}>
                 Education
-              </Link>
+              </a>
             </li>
             <li className={styles.navItem}>
-              <Link to="/projects" className={styles.navLink} onClick={() => setIsOpen(false)}>
+              {/* Changed Link to a tag with hash href */}
+              <a href="#projects" className={styles.navLink} onClick={() => setIsOpen(false)}>
                 Projects
-              </Link>
+              </a>
             </li>
             <li className={styles.navItem}>
-              <Link to="/experience" className={styles.navLink} onClick={() => setIsOpen(false)}>
+              {/* Changed Link to a tag with hash href */}
+              <a href="#experience" className={styles.navLink} onClick={() => setIsOpen(false)}>
                 Experience
-              </Link>
+              </a>
             </li>
             <li className={styles.navItem}>
-              <Link to="/resume" className={styles.navLink} onClick={() => setIsOpen(false)}>
+              {/* Changed Link to a tag with hash href */}
+              <a href="#resume" className={styles.navLink} onClick={() => setIsOpen(false)}>
                 Resume
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

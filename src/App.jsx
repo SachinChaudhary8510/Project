@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// Removed BrowserRouter, Routes, Route as we are going to a single page
 import { motion, AnimatePresence } from 'framer-motion'; // For page animations
 
 import Navbar from './components/Navbar';
@@ -18,25 +18,24 @@ import './App.css'; // For general layout and dark theme
 
 function App() {
   return (
-    <Router basename="/"> 
-      <div className="App">
-        <Navbar />
-        <main>
-          <AnimatePresence mode='wait'>
-            <Routes>
-              <Route path="/" element={<AnimatedPage><Introduction data={userData} /></AnimatedPage>} />
-              <Route path="/skills" element={<AnimatedPage><Skills data={userData.skills} /></AnimatedPage>} />
-              <Route path="/education" element={<AnimatedPage><Education data={userData.education} /></AnimatedPage>} />
-              <Route path="/projects" element={<AnimatedPage><Projects data={userData.projects} /></AnimatedPage>} />
-              <Route path="/experience" element={<AnimatedPage><Experience data={userData.experience} /></AnimatedPage>} />
-              <Route path="/resume" element={<AnimatedPage><Resume data={userData.resume} /></AnimatedPage>} />
-              {/* Add more routes for individual sections if desired, or use hash links for single-page navigation */}
-            </Routes>
-          </AnimatePresence>
-        </main>
-        <Footer data={userData.contact} testimonials={userData.testimonials} />
-      </div>
-    </Router>
+    <div className="App">
+      <Navbar />
+      <main>
+        {/* AnimatePresence can still be used for component mounting/unmounting if needed,
+            but for a single page, it might be less critical unless components are conditionally rendered.
+            Keeping it for now as it was part of the original setup. */}
+        <AnimatePresence mode='wait'>
+          {/* Render all components directly */}
+          <AnimatedPage><Introduction data={userData} /></AnimatedPage>
+          <AnimatedPage><Skills data={userData.skills} /></AnimatedPage>
+          <AnimatedPage><Education data={userData.education} /></AnimatedPage>
+          <AnimatedPage><Projects data={userData.projects} /></AnimatedPage>
+          <AnimatedPage><Experience data={userData.experience} /></AnimatedPage>
+          <AnimatedPage><Resume data={userData.resume} /></AnimatedPage>
+        </AnimatePresence>
+      </main>
+      <Footer data={userData.contact} testimonials={userData.testimonials} />
+    </div>
   );
 }
 
