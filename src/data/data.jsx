@@ -102,7 +102,7 @@ const userData = {
         phone: "+91 8510829569",
         email: "sachinchaudhary9718@gmail.com",
         github: "https://github.com/SachinChaudhary8510",
-        linkedin: "https://www.linkedin.com/in/sachin-chaudhary-135606241/",
+        linkedin: "https://www.linkedin.com/in/sachinchaudhary8510",
         instagram: "https://www.instagram.com/sachin_chaudhary8510/",
         leetcode: "https://leetcode.com/u/sachinchaudhary9718/",
     },
