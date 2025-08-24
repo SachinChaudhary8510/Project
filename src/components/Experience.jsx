@@ -10,7 +10,7 @@ const Experience = ({ data }) => {
       <h2 className={commonStyles.sectionTitle}>Experience</h2>
       <div className={styles.experienceGrid}>
         {data.map((exp, index) => (
-          <div key={index} className={`${cardStyles.card} ${styles.experienceCard}`}>
+          <div key={index} className={`${styles.card} ${styles.experienceCard}`}>
             <h3 className={styles.organizationName}>{exp.organization}</h3>
             <p className={styles.role}>{exp.role}</p>
             {exp.duration && <p className={styles.duration}>{exp.duration}</p>}

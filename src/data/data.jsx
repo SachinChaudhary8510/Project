@@ -65,14 +65,14 @@ const userData = {
     projects: [
         {
             name: "Portfolio Website",
-            github: "https://github.com/dummy/portfolio",
+            github: "https://sachinchaudhary-portfolio.vercel.app/",
             description: "A personal portfolio site built with React and Vite, showcasing my skills and projects.",
             tech: ["React", "Vite", "CSS Modules", "Framer Motion"],
             screenshot: portfolio, // Imported image
         },
         {
             name: "TO-DO App",
-            github: "https://github.com/dummy/ml-deployment",
+            github: "https://sachinchaudhary8510.github.io/TO-DO-App/",
             description: "A modern, responsive To-Do App built with React (Vite) and TailwindCSS. Features include task creation with optional deadlines, inline editing, deletion, and a real-time clock component.",
             tech: ["HTML5", "CSS3", "JavaScript", "ReactJS", "Github Pages"],
             screenshot: toDoApp, // Placeholder
