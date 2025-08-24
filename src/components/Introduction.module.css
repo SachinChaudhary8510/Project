@@ -71,6 +71,7 @@
     .introContent {
       flex-direction: column;
       text-align: center;
+      gap: 0rem;
     }
   
     .imageContainer {
