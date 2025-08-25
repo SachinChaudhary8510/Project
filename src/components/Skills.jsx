@@ -7,8 +7,9 @@ import cardStyles from "./Card.module.css";
 const Skills = ({ data }) => {
   return (
     <div>
-      <h2 className={commonStyles.sectionTitle}>My Skills</h2>
+      {/* <h2 className={commonStyles.sectionTitle}>My Skills</h2> */}
       <section id="skills" className={commonStyles.section}>
+      <h2 className={commonStyles.sectionTitle}>My Skills</h2>
         <div className={styles.skillsGrid}>
           {data.map((skill, index) => (
             <div
