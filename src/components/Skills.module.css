@@ -54,6 +54,7 @@
 
   .imageWrapper {
     height: 120px;
+    border-radius: 7px;
   }
 
   .skillName {

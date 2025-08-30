@@ -12,6 +12,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Resume from './components/Resume';
 
+
 import userData from './data/data'; // Import universal data
 
 import './App.css'; // For general layout and dark theme
@@ -26,6 +27,7 @@ function App() {
             Keeping it for now as it was part of the original setup. */}
         <AnimatePresence mode='wait'>
           {/* Render all components directly */}
+          
           <AnimatedPage><Introduction data={userData} /></AnimatedPage>
           <AnimatedPage><Skills data={userData.skills} /></AnimatedPage>
           <AnimatedPage><Education data={userData.education} /></AnimatedPage>
