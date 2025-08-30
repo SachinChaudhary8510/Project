@@ -27,6 +27,7 @@
   height: 150px; /* Fixed height for images */
   display: flex;
   justify-content: center;
+  border-radius: 7px;
   align-items: center;
   background-color: #f8f8f8; /* Light background for image section */
 }
