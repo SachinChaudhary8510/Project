@@ -13,6 +13,14 @@ import cssImage from "../assets/images/css.png"; // Import any missing images
 import rawalSchool from "../assets/images/rawalSchool.jpg";
 import kundanSchool from "../assets/images/kundanSchool.jpg";
 import bootstrapImage from "../assets/images/bootstrap.png";
+import hibernateImage from "../assets/images/hibernate.png";
+import springbootImage from "../assets/images/springboot.png";
+import postmanImage from "../assets/images/postman.png";
+import restapiImage from "../assets/images/restapi.png";
+import mongodbImage from "../assets/images/mongodb.png";
+import gitImage from "../assets/images/git.png";
+import githubImage from "../assets/images/github.png";
+import tailwindcssImage from "../assets/images/tailwindcss.png";
 
 const userData = {
     name: "Sachin Chaudhary",
@@ -30,6 +38,14 @@ const userData = {
         { name: "Java", level: "Expert", percentage: 95, image: javaImage },
         { name: "SQL", level: "Beginner", percentage: 60, image: sqlImage },
         { name: "Python", level: "Intermediate", percentage: 70, image: pythonImage },
+        { name: "Hibernate", level: "Intermediate", percentage: 70, image: hibernateImage },
+        { name: "Spring-Boot", level: "Intermediate", percentage: 70, image: springbootImage },
+        { name: "Mongo DB", level: "Intermediate", percentage: 70, image: mongodbImage },
+        { name: "REST API", level: "Intermediate", percentage: 70, image: restapiImage },
+        { name: "PostMan", level: "Intermediate", percentage: 70, image: postmanImage },
+        { name: "Git", level: "Intermediate", percentage: 70, image: gitImage },
+        { name: "Github", level: "Intermediate", percentage: 70, image: githubImage },
+        { name: "TailWind CSS", level: "Intermediate", percentage: 70, image: tailwindcssImage },
     ],
 
     education: [
