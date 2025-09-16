@@ -1,5 +1,5 @@
 // src/data/data.jsx
-import personImage from "../assets/images/person.jpg";
+import personImage from "../assets/images/person.png";
 import abcUniversityLogo from "../assets/images/logo_abc_university.png";
 import toDoApp from "../assets/images/to-do app.png"; // Placeholder image
 import portfolio from "../assets/images/portfolio.png"; // Placeholder image
